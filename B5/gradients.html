@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+</head>
+<style>
+    .linear-gradient {
+        
+        background: -webkit-linear-gradient(left, red, yellow, green);
+        background: -moz-linear-gradient(left, red, yellow, green);
+        background: -ms-linear-gradient(left, red, yellow, green);
+        background: -o-linear-gradient(left, red, yellow, green); 
+
+        background: linear-gradient(left, red, yellow, green);
+    }
+
+    .radial-gradient {
+        background: -webkit-radial-gradient(red, green, blue);
+        background: -o-radial-gradient(red, green, blue);
+        background: -moz-radial-gradient(red, green, blue);
+        
+        background: radial-gradient(red, green, blue);
+        
+    }
+
+
+
+    #khung {
+        width: 500px;
+        height: 300px;
+        text-align: center;
+        margin: auto;
+        border: 1px solid red;
+        text-transform: uppercase;
+        padding: 10px;
+        border-radius: 10px;
+
+    }
+
+    .phancach {
+        margin: 30px;
+    }
+</style>
+
+<body>
+    <div id="khung" class="linear-gradient">
+        <h1>linear-gradient</h1>
+    </div>
+    <div class="phancach"></div>
+    <div id="khung" class="radial-gradient"></div>
+</body>
+
+</html>

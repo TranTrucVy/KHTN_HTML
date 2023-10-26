@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu trúc Lệnh</title>
+</head>
+<body>
+    <script src="./js/thuvien.js"></script>
+    <script>
+        // Cấu trúc rẽ nhánh ===============================================
+        /*
+            Cú pháp
+            if(dieukien){
+                // Lệnh dieukien đúng
+            }else{
+                // Lệnh dieukien sai
+            }
+        */
+        // Kiểm tra điểm: Điểm lớn hơn hay bằng 5 -> lên lớp ngược lại thi lại
+        var diem=4.5;
+        var kq="";
+        if(diem>=5){
+            kq="Đậu";
+        }else{
+            kq ="Thi lại";
+        }
+        document.write("Điểm: " + diem + " Kết quả:" + kq);
+        document.write("<hr>");
+        // So sánh hai số
+        /*
+            * a>b
+            ** a==b
+            a<b
+        */
+        var a=15,b=10;
+        /*
+        if(a>b){
+            document.write("Hai số a=" + a + ", b= " + b + " => a > b" );
+        }else{
+            if(a==b){
+                document.write("Hai số a=" + a + ", b= " + b + " => a == b" );
+            }else{
+                document.write("Hai số a=" + a + ", b= " + b + " => a < b" );
+            }
+        }
+        */
+        if(a>b){
+            document.write("Hai số a=" + a + ", b= " + b + " => a > b" );
+        }else if(a==b){
+            document.write("Hai số a=" + a + ", b= " + b + " => a == b" );
+        }else{
+            document.write("Hai số a=" + a + ", b= " + b + " => a < b" );
+        }
+        document.write("<hr>");
+        // Xếp loại học tập: Điểm trung bình: (HK1 + (HK2*2))/3  
+        /*
+            Giỏi: DTB >=8
+            Khá : DTB >=6.5 và  DTB < 8
+            Trung bình: DTB >=5 và  DTB < 6.5
+            Yếu:  DTB < 5
+        */
+       var HK1=8, HK2=9;
+       var xeploai="";
+       var DTB=diemtrungbinh(HK1,HK2);
+       //document.write(DTB)
+       if(DTB>=8){
+           xeploai="Giỏi"
+       }else if(DTB>=6.5){
+           xeploai="Khá"
+       }else if(DTB >=5){
+           xeploai="Trung bình"
+       }else{
+           xeploai="Yếu"
+       }
+       document.write("HK1=" + HK1 + ", HK2= " + HK2 + " => DTB:" + DTB + " Xếp loại: " + xeploai );
+    </script>
+</body>
+</html>

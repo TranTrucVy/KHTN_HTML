@@ -1,0 +1,7 @@
+Tạo tập tin: baitho.html
+Nội dung: Gồm hai câu thơ bạn biết
+Yêu cầu:
+    Canh giữa, Co chữ 26px, 
+    Màu chữ tùy thích, 
+    Màu nền tùy thích.
+    Câu một xuống dòng với câu hai

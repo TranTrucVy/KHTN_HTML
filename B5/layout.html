@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+</head>
+<style>
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.khung{
+    border: 0.7px solid gray;
+}
+#header{
+    width:100%;
+}
+
+#header .logo{
+    width: 30%;
+    float: left;
+}
+#header .slogan{
+    width: 70%;
+    float: left;
+}
+#menu{
+    width: 100%;
+    
+}
+</style>
+<body>
+    <div id="header">
+        <div class="logo khung">Logo</div>
+        <div class="slogan khung">Slogan</div>
+    </div>
+    <div style="clear: both;"></div>
+    <div id="menu" class="khung">Menu</div>
+</body>
+</html>

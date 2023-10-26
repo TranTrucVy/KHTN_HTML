@@ -1,0 +1,29 @@
+html,body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+*{
+    box-sizing: border-box;
+}
+#container{
+    border: 1px solid chocolate;
+    
+}
+#left{
+    width: 30%;
+    float: left;
+}
+.imgL{
+    width: 100%;
+    height: auto;
+}
+.imgN{
+    width: 20%;
+    
+}
+#right{
+    width: 70%;
+    float: left;
+
+}
+

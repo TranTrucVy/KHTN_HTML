@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Phức tạp</title>
+    <style>
+        /*
+        Nhóm – Grouping
+            Khai báo một style áp dụng cho nhiều selector khác nhau
+            Cú pháp: h1,div,.title,#header{
+
+            }
+        */
+        h1,div,p,.title,#header{
+            color: red;
+            font-style: italic;
+        }
+        /*
+        CSS lồng nhau – (Nesting)
+            Cú pháp:
+            Cha Con Cháu Chít{
+
+            } 
+
+        */
+        #menu ol li a{
+            text-decoration: none;
+        }
+
+        #menu ol li a:hover{
+            font-weight: bold;
+            font-style: normal;
+        }
+        /*
+        CSS cho form – (Styling form)
+        Cú pháp:
+            input[type=""]{
+
+            } 
+        */
+
+        input[type="text"], input[type="password"]{
+            background-color: chocolate;
+            color: white;
+        }
+
+        input[type="button"]{
+            border: none;
+            padding: 10px;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Nhóm - h1 </h1>
+    <p>Nhóm - p</p>
+    <div id="header">Nhóm - id=header</div>
+    <span class="title">Nhóm - class=title</span>
+    <hr>
+    <a href="#">Trung Tâm Tin học</a>
+    <div id="menu">
+        <ol style="list-style-type:none;">
+            <li>
+                <a href="#">Liên kết 1</a>
+            </li>
+            <li>
+                <a href="#">Liên kết 2</a>
+            </li>
+            <li>
+                <a href="#">Liên kết 3</a>
+            </li>
+        </ol>
+    </div>
+    <hr>
+    <input type="text" placeholder="Họ tên">
+    <input type="password" placeholder="Mật khẩu">
+    <input type="button" value="Đăng nhập">
+</body>
+</html>

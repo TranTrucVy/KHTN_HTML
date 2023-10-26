@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <!-- Font Awesome 4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- JS -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- MyCSS -->
+    <link rel="stylesheet" href="./css/myStyle.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div style="padding: 10px 0px" class="container-fluid" id="header__content">
+        <div class="row">
+            <div class="col-12 col-md-4 mx-auto d-flex justify-content-center align-items-center">
+                <img src="./img/fresh-garden.jpg" alt="" class="img-fluid" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-12 col-md-8 text-center">
+                <h1 class="header__content__items">Tiệm hoa của Duuuuuu</h1>
+                <h6><i class="fa fa-home fa-home-red fa-home-size" aria-hidden="true"></i>Địa chỉ: 16 Nguyễn Văn Linh,
+                    Tân Phong, Quận 7, TP.HCM</h6>
+                <h6 style="margin-bottom: 20px;">Email: Duuu15@gmail.com <i class="fa fa-phone-square"
+                        aria-hidden="true"></i>0353472139</h6>
+                <!-- <a style="font-size: 18px; background-color: green; color: yellow; padding: 10px; margin-top: 20px"
+                    href="./thanhtoan.html">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    Thanh toán thôi nào</a> -->
+                <a style="font-size: 18px; background-color: green; color: yellow; padding: 10px; margin-top: 20px"
+                    href="#">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    Chúc bạn mua hàng vui vẻ nèee</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT  -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-12 col-xl-12">
+                <div class="ml-2">
+                    <a class="btn btn-success" href="#">Đồng ý</a>
+                    <a class="btn btn-danger" href="#">Xóa giỏ hàng</a>
+                    <a class="btn btn-warning text-white" href="./index.html">Mua tiếp</a>
+                </div>
+                <h1 id="example" style="text-align:center; color: red; font-weight: bold;">GIỎ HÀNG CỦA BẠN</h1>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- TABLE -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-7 ">
+                <!-- <div class="col-12 col-md-12 col-xl-12"> -->
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="bg-warning text-light">
+                            <tr style="text-align: center;" class="bg-warning text-white text-nowrap">
+                                <th>Hình ảnh</th>
+                                <th>Tên</th>
+                                <th>Số lượng</th>
+                                <th>Đơn giá</th>
+                                <th>Thành tiền</th>
+                                <th>Xóa</th>
+                            </tr>
+                            </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">
+                                    <img src="./img/hoahong/9_hoahongvang.jpg"
+                                        class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                                        alt="">
+                                </td>
+                                <td>Hoa Hồng Vàng</td>
+                                <td>
+                                 <input class="soluong_nhapvao" type="text" name="" id="soluongmua" value="1"> <span class="error" id="slm"></span> 
+                                </td>
+                                <td>450.000<sup>đ</sup></td>
+                                <td>
+                                  <div class="text-danger" id="hoahongxinh"></div>
+                                </td>
+                                <td><i class="fa fa-trash btn-danger fa-2x" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">
+                                    <img src="./img/hoakho/12_babyxinhhongg.jpg"
+                                        class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                                        alt="">
+                                </td>
+                                <td>Bó Hoa Baby Hồng </td>
+                                <td>
+                                    <input class="soluong_nhapvao" type="text" name="" id="soluongmuahoa" value="1"> <span class="error" id="slmh"></span>
+                                </td>
+                                <td>600.000<sup>đ</sup> </td>
+                                <td>
+                                    <div class="text-danger" id="hoababyhong"></div>
+                                </td>
+                                <td><i class="fa fa-trash btn-danger fa-2x" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" colspan="6" style="text-align: center; font-size: 20px">
+                                    <button id="tongtien" onclick="Tinhtoan()">Tổng tiền thanh toán</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <!-- </div> -->
+                </div>
+        </div>
+        <div class="col-12 col-lg-5 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-xl-12">
+                        <p class="bg-warning text-white" id="giaohang">Thông tin giao hàng</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Họ Tên:</label>
+                                <input type="name" class="form-control" placeholder="Enter name" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" placeholder="Enter email" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Điện thoại:</label>
+                                <input type="phone" class="form-control" placeholder="Enter phone" id="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="add">Địa chỉ giao hàng:</label>
+                                <input type="add" class="form-control" placeholder="Enter add" id="add">
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Ngày giao hàng:</label>
+                                <input type="date" class="form-control" placeholder="Enter date" id="date">
+                            </div>
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox"> Gửi bản sao!
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-warning">Gửi</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<!-- footer -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-12 col-xl-12 text-center bg-warning text-white"
+                    style="font-size: 20px; padding: 5px; margin-top: 15px;">
+                    &copy; Duuu Flower Shop
+                </div>
+            </div>
+        </div>
+        
+                    <!-- TÍNH TOÁN -->
+            <script>
+                function Tinhtoan() {
+                    var a = document.getElementById("soluongmua").value;
+                    var b = document.getElementById("soluongmuahoa").value;
+
+                    document.getElementById("slm").innerHTML = ""
+                    document.getElementById("slmh").innerHTML = ""
+                    // Kiểm tra
+
+                    if (a == "") {
+                        document.getElementById("slm").innerHTML = "(*Vui lòng nhập lại)"
+                        document.getElementById("a").focus();
+                        return false;
+                    }
+                    if (isNaN(a)) {
+                        document.getElementById("slm").innerHTML = "(*Vui lòng nhập lại)"
+                        document.getElementById("a").select();
+                        return false;
+                    }
+
+                    if (b == "") {
+                        document.getElementById("slmh").innerHTML = "(*Vui lòng nhập lại)"
+                        document.getElementById("b").focus();
+                        return false;
+                    }
+                    if (isNaN(b)) {
+                        document.getElementById("slmh").innerHTML = "(*Vui lòng nhập lại)"
+                        document.getElementById("b").select();
+                        return false;
+                    }
+
+                    // Tính toán 
+                    var hoahong = Number(a) * 450000;
+                    var hoababy = Number(b) * 600000;
+                    var tongtien = hoahong + hoababy;
+                    // Xuất input
+                    // Xuất div
+                    document.getElementById("hoahongxinh").innerHTML = hoahong;
+                    document.getElementById("hoababyhong").innerHTML = hoababy;
+
+                    document.getElementById("tongtien").innerHTML = "Tổng tiền thanh toán: "+ tongtien;
+
+                }
+                Tinhtoan();
+            </script>
+</body>
+
+</html>

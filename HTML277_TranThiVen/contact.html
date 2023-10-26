@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+   <!-- Font Awesome 4 CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- CSS -->
+   <link rel="stylesheet" href="./css/bootstrap.min.css">
+   <!-- JS -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+   <script src="./js/bootstrap.min.js"></script>
+   <script src="https://cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
+   <!-- MyCSS -->
+   <link rel="stylesheet" href="./css/myStyle.css">
+</head>
+
+<body>
+    <!-- HEADER   -->
+    <div style="padding: 10px 0px" class="container-fluid" id="header__content">
+        <div class="row">
+            <div class="col-12 col-md-4 col-xl-4 mx-auto">
+                <img src="./img/fresh-garden.jpg" alt="" class="img-fluid" style="width: 100%; height: 100%;">
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center;" class="col-12 col-md-8 col-xl-8 text-center">
+                <div>
+                    <h1 class="header__content__items">Tiệm hoa của Duuuuuu</h1>
+                    <h6>Địa chỉ: 16 Nguyễn Văn Linh, Tân Phong, Quận 7, TP.HCM</h6>
+                    <h6 style="margin-bottom: 20px;">Email: Duuu15@gmail.com 0353472139</h6>
+                    <a style="font-size: 18px; background-color: #ffc107; color:black; padding: 10px;" href="./giohang.html">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        Đi Đến Giỏ Hàng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-12 col-xl-12">
+                <div class="ml-2">
+                    <button class="btn btn-success" type="button">Đồng ý</button>
+                    <button class="btn btn-danger" type="button">Bỏ qua</button>
+                </div>
+                <h1 id="example" style="text-align:center; color: red; font-weight: bold;">LIÊN HỆ
+                    VỚI CHÚNG TÔI</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-7 col-xl-7">
+                <form>
+                    <div class="form-group">
+                        <label style="font-weight:700;" for="text">Chủ đề cần tư vấn:</label>
+                        <input type="text" class="form-control" placeholder="..." id="chude">
+                    </div>
+                    <div class="form-group">
+                        <label style="font-weight:700;" for="text">Họ và tên:</label>
+                        <input type="text" class="form-control" placeholder="Nguyễn Văn A" id="hoten">
+                    </div>
+                    <div class="form-group">
+                        <label style="font-weight:700;" for="email">Email:</label>
+                        <input type="email" class="form-control" placeholder="Name@gmail.com" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label style="font-weight:700;" for="text">Ghi chú:</label>
+                    </div>
+                </form>
+                <textarea name="editor1"></textarea>
+                <script>
+                    CKEDITOR.replace('editor1');
+                </script>
+            </div>
+            <div class="col-12 col-md-5 col-xl-5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.477461551325!2d106.68333881450091!3d10.697607892375036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31753028d4801b5d%3A0xa26620aea993d48d!2zNDIzIMSQxrDhu51uZyDEkMOgbyBTxrAgVMOtY2gsIFBoxrDhu5tjIEzhu5ljLCBOaMOgIELDqCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1660849743006!5m2!1svi!2s"
+                    width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-12 col-xl-12 text-center bg-warning text-light" style=" padding: 5px; margin-top: 15px;">
+                &copy; Duuu Flower Shop
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

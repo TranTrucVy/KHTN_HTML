@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrounds</title>
+</head>
+<style>
+    #backgroundImage {
+        background-image: url(images/portfolio-6.jpg);
+        /* background-size:100% auto; */
+        background-size: cover;
+        text-align: center;
+        
+        width: 500px;
+        height: 300px;
+
+    }
+
+    #multiplebackgrounds {
+        border: 1px solid red;
+        height: 350px;
+        width: 500px;
+        padding-top: 150px;
+        color: #389605;
+        font-family: Arial, Helvetica, sans-serif;
+
+        
+        
+        background:
+            
+            url(images/border.png) top right no-repeat,
+            url(images/border.png) center no-repeat,
+            url(images/border.png) top left no-repeat,
+            url(images/border.png) bottom right no-repeat,
+            url(images/border.png) bottom left no-repeat;
+            
+        
+
+    }
+
+    .phancach {
+        margin: 30px;
+    }
+</style>
+
+<body>
+    <div id="backgroundImage">
+        HonDa CiTi
+    </div>
+    <div class="phancach"></div>
+    <div id="multiplebackgrounds">
+        Hình nền
+    </div>
+</body>
+
+</html>

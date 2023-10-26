@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngôn ngữ lập trình JavaScript</title>
+</head>
+
+<body>
+    <script>
+        // Khai báo biến
+        var hoten = "Trần Anh Tài" // Biến toàn cục
+        var tuoi = 30
+        tuoi=50;
+        var hople=true
+        document.write('<p>Biến hoten có giá trị là: ' + hoten + " Kiểu: " + typeof(hoten))
+        document.write('<p>Biến tuoi có giá trị là: ' + tuoi + " Kiểu: " + typeof(tuoi)) 
+        document.write('<p>Biến hople có giá trị là: ' + hople + " Kiểu: " + typeof(hople))     
+            
+        /* 
+            - Biến Toàn cục: Khai báo bên ngoài hàm 
+            - Biến Cục bộ: Khai báo trong hàm gọi là biến cục bộ (local variable) 
+            và chỉ được phép sử dụng trong hàm khai báo nó
+            - Giá trị của biến (kiểu dữ liệu trong JS):
+        */
+       
+        // Xây dựng hàm 
+        function Test(){
+            var phai="Nam" // Biến Cục bộ
+            //alert("Biến hoten có giá trị là:" + hoten)
+            alert("Biến phái trong hàm có giá trị là:" + phai)
+        }
+        //document.write('<p>Biến phai có giá trị là: ' + phai)  // ReferenceError: phai is not defined
+        // Gọi hàm
+        //Test()
+        //////////////////////////////////////////////////////////////////////////////////////////////////
+        // Khai báo hằng
+        const PI=3.14;
+        // PI=3.1415 // TypeError: Assignment to constant variable.
+        document.write('<p>Hằng số PI có giá trị là: ' + PI + " Kiểu: " + typeof(PI))
+        
+    </script>
+</body>
+
+</html>

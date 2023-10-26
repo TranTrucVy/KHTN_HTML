@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toán tử số học</title>
+</head>
+
+<body>
+    <script>
+        var ho = "Trần"
+        var ten = "Thanh"
+        var hoten = ho + " " + ten;
+        var so1 = 5;
+        var so2 = 4;
+        var tong = so1 + so2;
+        document.write('<p>Biến hoten có giá trị là: ' + hoten)
+        document.write('<p>Biến tong có giá trị là: ' + tong)
+        //////////////////////////////////////////// Toán tử 3 ngôi    
+        document.write("<hr>")
+        var diem = 4.5;
+        var kq = (diem >= 5) ? "Đậu" : "Rớt";
+        document.write('<p>Biến kq có giá trị là: ' + kq)
+        ///////////////////////////////////////////// Một số hàm cơ bản trong JavaScript
+        document.write("<hr>")
+        document.write('<p>eval("5+4") đánh giá biểu thức chuỗi và thi hành như là code JavaScript: ' + eval("5+4"));
+        // isNaN(<giá trị>): Nếu <giá trị> là chuỗi “”, trả về true
+        var giatri = 123;
+        document.write('<p>Kết quả của hàm isNaN(giatri): ' + isNaN(giatri))
+        document.write("<hr>")
+        //Number(<đối tượng>): chuyển đổi một đối tượng sang một con số, nếu không chuyển được, trả về NaN 
+        var str = "123";
+        document.write('<p>Kiểu của biến str: ' + typeof (str) + ' Chuyển ' + (Number(str)))
+        document.write("<hr>")
+        var hsluong = "4.5";
+        document.write('<p>Chuyển  của biến hsluong: ' + parseInt(hsluong));
+        document.write('<p>Chuyển  của biến hsluong: ' + parseFloat(hsluong));            
+    </script>
+</body>
+
+</html>

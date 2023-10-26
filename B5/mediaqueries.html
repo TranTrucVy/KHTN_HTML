@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Phải khai báo dòng này-->
+    <title>Media Queries</title>
+    <style>
+        
+        
+        body {
+          background-color: chocolate;
+          color: whitesmoke;
+          box-sizing: border-box;
+
+        }
+        div{
+          font-size: 20px;
+          font-weight: bold;
+        }
+        
+        /* Trên màn hình rộng 992px trở xuống, màu nền là blue: Máy tính bảng */
+        @media screen and (max-width: 992px) {
+          body {
+            background-color: blue;
+            color: white;
+          }
+          h1{
+            font-size: 26px;
+            color: red;
+          }
+          div{
+            font-size: 16px;
+            font-style: italic;
+          }
+        }
+        
+        /* Trên màn hình rộng từ 600px trở xuống, màu nền là olive: Điện thoại */
+        @media screen and (max-width: 600px) {
+          body {
+            background-color: olive;
+            color: red;
+          }
+          h1{
+            font-size: 20px;
+          }
+
+          div{
+            font-size: 12px;
+            text-decoration: underline;
+          }
+        }
+        </style>    
+</head>
+<body>
+    <h1>Thay đổi kích thước cửa sổ trình duyệt để xem hiệu ứng!</h1>
+    <div>Font Size</div>
+    <p>Theo mặc định, màu nền của tài liệu là "chocolate". 
+        Nếu kích thước màn hình từ 992px trở xuống, màu sẽ chuyển thành "blue". 
+        Nếu nó là 600px trở xuống, nó sẽ chuyển thành "olive".</p>   
+</body>
+</html>

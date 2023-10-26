@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<canvas id="vidu2" width="200" height="100"><script>
+	var c = document.getElementById("vidu2");
+	var ctx = c.getContext("2d");
+	// Create gradient
+	var grd = ctx.createLinearGradient(0,0,200,0);
+	grd.addColorStop(0,"red");
+	grd.addColorStop(1,"white");
+	
+	// Fill with gradient
+	ctx.fillStyle = grd;
+	ctx.fillRect(10,10,150,80);
+</script>
+</body>
+</html>

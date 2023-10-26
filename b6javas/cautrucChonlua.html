@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu trúc chọn lựa</title>
+</head>
+
+<body>
+    <script>
+        /*
+            tháng, năm => tính số ngày trong tháng
+            biết rằng: 
+            tháng: 1,3,5,7,8,10,12 : số ngày 31
+            tháng: 4,6,9,11 : số ngày 30
+            thang: 2 Xét Năm
+                Năm Nhuận: số ngày 29
+                Năm Không Nhuận: số ngày 28
+                Năm nhuần: chia hết cho 4 và không chia hết cho 100 hay chia hết 400 
+        */
+        var thang = 2;
+        var nam = 2022;
+        var songay = 0;
+        if (thang >= 1 && thang <= 12) {
+            switch (thang) {
+                case 1:
+                    songay = 31;
+                    break;
+                case 2:
+                    songay = 28;
+                    if ((nam % 4 == 0 && nam % 100 != 0) || nam % 400 == 0) {
+                        songay = 29;
+                    }
+                    break;
+                case 3:
+                    songay = 31;
+                    break;
+                case 4:
+                    songay = 30;
+                    break;
+                case 5:
+                    songay = 31;
+                    break;
+                case 6:
+                    songay = 30;
+                    break;
+                case 7:
+                    songay = 31;
+                    break;
+                case 8:
+                    songay = 31;
+                    break;
+                case 9:
+                    songay = 30;
+                    break;
+                case 10:
+                    songay = 31;
+                    break;
+                case 11:
+                    songay = 30;
+                    break;
+                case 12:
+                    songay = 31;
+                    break;
+
+            }
+            document.write("Tháng: " + thang + " Năm: " + nam + " Số ngày: " + songay);
+        } else {
+            document.write("Tháng: " + thang + " Không hợp lệ ");
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border - Đường viền</title>
+</head>
+<style>
+    #khung {
+        width: 500px;
+        text-align: center;
+        margin: auto;
+        border: 2px solid red;
+        text-transform: uppercase;
+        padding: 10px;
+        border-radius: 10px 10px 10px 10px ;
+
+    }
+
+    #khung1 {
+        width: 500px;
+        text-align: center;
+        margin: auto;
+        border: 1px solid red;
+        text-transform: uppercase;
+        padding: 10px;
+        box-shadow: 10px 10px 5px red;
+
+    }
+
+    .phancach {
+        margin: 30px;
+    }
+
+    #borderimg1 {
+        border: 10px solid transparent;
+        padding: 15px;
+        border-image: url(images/border.png) 30 round;
+        text-transform: uppercase;
+    }
+
+    #borderimg2 {
+        border: 10px solid transparent;
+        padding: 15px;
+        border-image: url(images/border.png) 30 stretch;
+        text-transform: uppercase;
+    }
+</style>
+
+<body>
+    <img src="images/border.png">
+    <div id="khung">
+        trường đại học khoa học tự nhiên<br> 
+        trung tâm tin học (border-radius)
+
+    </div>
+    <div class="phancach"></div>
+    <div id="khung1">
+        trường đại học khoa học tự nhiên<br> trung tâm tin học
+         (box-shadow)
+    </div>
+    <div class="phancach"></div>
+    
+    <div id="borderimg1">
+        trường đại học khoa học tự nhiên<br> trung tâm tin học
+        (url(images/border.png) 30 round;)
+    </div>
+    <div class="phancach"></div>
+    <div id="borderimg2">
+        trường đại học khoa học tự nhiên<br> trung tâm tin học
+        (url(images/border.png) 30 stretch)
+    </div>
+
+</body>
+
+</html>

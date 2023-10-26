@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+html,body{
+    font-size: 18px;
+}
+
+.text-yellowgreen{
+    color: yellowgreen;
+}
+
+
+h1, .Pacifico{
+    font-family:'Pacifico' , cursive;
+}
+
+.Amatic{
+    font-family: 'Amatic SC', cursive;
+}
+
+.text-pink{
+    color: pink;
+}
+
+.text-orange{
+    color: orange;
+}
+
+.text-lightsalmon{
+    color: lightsalmon;
+}
+
+.text-aqua{
+    color: aqua;
+}
+
+.text-purple{
+    color: purple;
+}
+
+.bg-pink{
+    background-color: pink;
+}
+
+.bg-orange{
+    background-color: orange;
+}
+
+.bg-aqua{
+    background-color: aqua;
+}
+
+.bg-gold{
+    background-color: gold;
+}
+
+.bg-lightsalmon{
+    background-color: lightsalmon;
+}
+
+.bg-yellowgreen{
+    background-color: yellowgreen;
+}
+
+.fa-shopping-cart-black, .fa-info-circle-black{
+    color: black;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+
+
+.effect:hover{
+    border: solid greenyellow 5px;
+    color: purple;
+    transition: 0.1s;
+}
+
+.effect2:hover{
+    border: solid 5px blueviolet;
+    color: black;
+    transition: 0.1s;
+}
+
+.active{
+    font-weight: 900;
+}
+
+#thongbao{
+    text-align: center;
+    font-size: 40px;
+}
+
+.chucolon{
+    font-size: 40px;
+}
+
+.btn{
+    border-radius: 12px;
+}
+
+.fa-dollar{
+    color:red;
+    background-color: yellow;
+  }
+
+#checkout:hover{
+    color:greenyellow;
+    background-color: purple;
+    transition: 0.2s;
+  }
+
+  .btn-pink{
+    color:#fff;
+    background-color:pink;
+    border-color:pink;
+}
+
+.btn-darkmagenta{
+    color:#fff;
+    background-color:darkmagenta;
+    border-color: darkmagenta;
+}
+
+

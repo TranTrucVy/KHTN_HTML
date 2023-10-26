@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mô hình BOM - DOM</title>
+</head>
+<style>
+    .tieu_de {
+        color: red;
+    }
+</style>
+
+<body>
+
+    <div style="text-align: center;" id="container">
+        <h1 id="tieuDe">Mô hình BOM - DOM</h1>
+        <input type="button" value="Mô hình BOM" onclick="mohinhBOM()" />
+        <hr>
+
+        <a href="javaScript:void(0)" onclick="return openWindow()">Open</a>
+        <a href="javaScript:void(0)" onclick="return moveWindow()">Move</a>
+        <a href="javaScript:void(0)" onclick="return resizeWindow()">Resize</a>
+        <a href="javaScript:void(0)" onclick="return closeWindow()">Close</a>
+        <hr>
+        <input type="button" value="Mô hình DOM" onclick="mohinhDOM()" />
+    </div>
+
+    <img src="images/mua_hang.png" onmouseover="this.src='images/mua_tra_gop.png'"
+        onmouseout="this.src='images/mua_hang.png'" />
+
+</body>
+<script>
+    function mohinhDOM() {
+        //var container = document.getElementById("container");
+
+        //container.style.color = "red";
+        //container.setAttribute("key","AP001") // gán thuộc tính key="AP001"
+        //alert(container.innerHTML)
+        //alert(container.getAttribute("id"))  
+
+        var links = document.getElementsByTagName("a");
+        //alert(links.length) //4
+        
+        for (var i = 0;i< links.length; i++) {
+            links.item(i).setAttribute("class", "tieu_de");
+            alert(links.item(i).innerText)
+        }
+                
+
+    }
+    function mohinhBOM() {
+        // lấy chiều cao
+        var heightBrowser = window.innerHeight;
+
+        // lấy chiều rộng
+        var widthBrowser = window.innerWidth;
+        // Lấy trình duyệt
+        var sBrowser, sUsrAg = navigator.userAgent;
+        // The order matters here, and this may report false positives for unlisted browsers.
+
+        if (sUsrAg.indexOf("Firefox") > -1) {
+            sBrowser = "Mozilla Firefox";
+            // "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0"
+        } else if (sUsrAg.indexOf("SamsungBrowser") > -1) {
+            sBrowser = "Samsung Internet";
+            // "Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-G955F Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.4 Chrome/67.0.3396.87 Mobile Safari/537.36
+        } else if (sUsrAg.indexOf("Opera") > -1 || sUsrAg.indexOf("OPR") > -1) {
+            sBrowser = "Opera";
+            // "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 OPR/57.0.3098.106"
+        } else if (sUsrAg.indexOf("Trident") > -1) {
+            sBrowser = "Microsoft Internet Explorer";
+            // "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; Zoom 3.6.0; wbx 1.0.0; rv:11.0) like Gecko"
+        } else if (sUsrAg.indexOf("Edge") > -1) {
+            sBrowser = "Microsoft Edge";
+            // "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299"
+        } else if (sUsrAg.indexOf("Chrome") > -1) {
+            sBrowser = "Google Chrome or Chromium";
+            // "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36"
+        } else if (sUsrAg.indexOf("Safari") > -1) {
+            sBrowser = "Apple Safari";
+            // "Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1 980x1306"
+        } else {
+            sBrowser = "unknown";
+        }
+        document.getElementById("tieuDe").innerHTML="You are using: " + sBrowser;
+        window.document.title = `Chiều Cao:${heightBrowser} - Rộng:${widthBrowser}`;
+    }
+
+    var windowChild = null;
+
+    function openWindow() {
+        windowChild = window.open('https://csc.edu.vn/', "windowChild", "width=500, height=500");
+        return false;
+    }
+    function moveWindow() {
+        windowChild = window.open('https://csc.edu.vn/', "windowChild", "width=500, height=500");
+        windowChild.moveTo(500, 300);
+        windowChild.focus();
+        return false;
+    }
+    function resizeWindow() {
+        windowChild = window.open('https://csc.edu.vn/', "windowChild", "width=500, height=500");
+        windowChild.resizeTo(1000, 1000);
+        windowChild.focus();
+        return false;
+    }
+
+    function closeWindow() {
+        windowChild.close()
+        return false;
+    }
+
+</script>
+
+</html>

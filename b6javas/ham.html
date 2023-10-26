@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xây dựng Hàm </title>
+    <script src="./js/thuvien.js"></script>
+
+</head>
+
+<body>
+    <script>
+        // function tonghaiso(a,b){
+        //     var tong= a+b;
+        //     return tong;
+        // }
+
+        // Gọi hàm tonghaiso
+        var x = 15, y = 40;
+        var tong = tonghaiso(x, y);
+        var kq = solonnhat(x, y);
+        var d = 20, r = 5;
+        var dt = dientichHCN(d, r);
+        document.write("<p>Kết quả tổng hai số: " + x + " + " + y + " = " + tong);
+        document.write("<p>Số lớn nhất của hai số: " + x + ", " + y + " => " + kq);
+        document.write("<p>Diện tích HCN  dài: " + d + " rộng: " + r + " => " + dt);    
+    </script>
+</body>
+
+</html>

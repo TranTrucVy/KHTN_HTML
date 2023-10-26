@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body > <!--onload="alert('load')"-->
+    <select onchange="alert(this.value)">
+        <option value="1">Mục 1</option>
+        <option value="2">Mục 2</option>
+        <option value="3">Mục 3</option>
+    </select>
+    <input type="text" onkeyup="console.log(this.value)"  onfocus="console.log('Vào')" onblur="console.log('ra')" >
+    <!-- onkeydown="console.log(this.value)" -->
+    <h1 onclick="alert('Nhấn ')">Click Me</h1>
+    <img src="images/sale.jpg" onmouseover="this.src='images/mua_hang.png'" onmouseout="this.src='images/sale.jpg'" />
+</body>
+</html>

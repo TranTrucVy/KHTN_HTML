@@ -1,0 +1,73 @@
+html,body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background-color: teal;
+    padding: 5px;
+}
+
+header img{
+    float: left;
+    margin-bottom: 0px;
+}
+
+.imgHeader{
+    width: 60%;
+    margin-left: 100px;
+    margin-top: 4px;
+}
+
+nav{
+    background-color: rgb(200, 197, 197);
+    padding: 8px;
+}
+a{
+    text-decoration: none;
+    margin: 0px 10px;
+    color: rgb(126, 124, 124);
+}
+a.active{
+    background-color: green;
+    color: white;
+    padding: 8px 10px;
+    font-weight: 800;
+}
+a.active:hover{
+    font-style: italic;
+}
+
+.tieu_de{
+    text-align: center;
+    color: chocolate;
+    text-transform: uppercase;
+}
+
+.khung{
+    width: 25%;
+    float: left;
+    padding:5px ;
+}
+figure img{
+    width: 100%;
+}
+
+.san_pham_moi{
+    width: 40%;
+    float: left;
+    padding-right: 10px;
+}
+.lien_he{
+    width: 60%;
+    float: left;
+    padding-left: 10px;
+}
+footer{
+    background-color: teal;
+    color: whitesmoke;
+    padding: 10px;
+}

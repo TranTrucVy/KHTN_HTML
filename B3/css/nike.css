@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+#header{
+    background-color: teal;
+    padding: 10px;
+}
+.logo{
+    float: left;
+}
+.imgHeader{
+    float: left;
+    width: 50%;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+.clear{
+    clear: both;
+}
+nav{
+    background-color: rgb(185, 182, 182);
+    padding: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(70, 68, 68);
+    margin: 0px 10px;
+}
+.active{
+    background-color: greenyellow;
+    color: white;
+    padding: 10px 20px;
+}
+.tieude{
+    text-transform: uppercase;
+    text-align: center;
+}
+.khung{
+    width: 25%;
+    float: left;
+    padding: 5px;
+    /* box-sizing: border-box; */
+}
+.khung img{
+    width: 100%;
+}
+.left{
+    width: 40%;
+    float: left;
+}
+.right{
+    width: 60%;
+    float: left;
+}
+footer{
+    background-color:teal;
+    padding: 20px 10px;
+    color: antiquewhite;
+}

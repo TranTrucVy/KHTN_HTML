@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Diện tích - Chu vi Hình Chữ Nhật</title>
+</head>
+<body>
+    <table>
+        <caption>
+            <h4>Tính Diện tích - Chu vi Hình Chữ Nhật (javaScript)</h4>
+        </caption>
+        <tr>
+            <td>Nhập Chiều Dài</td>
+            <td>
+                <input type="text" name="" id="d">
+            </td>
+        </tr>
+        <tr>
+            <td>Nhập Chiều Rộng</td>
+            <td>
+                <input type="text" name="" id="r">
+            </td>
+        </tr>
+        <tr>
+            <td>Diện tích: </td>
+            <td>
+                <input type="text" name="" id="dt" readonly>
+            </td>
+        </tr>
+        <tr>
+            <td>Chu vi: </td>
+            <td>
+                <input type="text" name="" id="cv" readonly>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="Tinhtoan()">Tính Diện tích - Chu vi</button>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function Tinhtoan(){
+           // Nhập
+           var d=document.getElementById("d").value;
+           var r=document.getElementById("r").value;
+           // Tính toán 
+           var dt= Number(d) * Number(r);
+           var cv= (Number(d) + Number(r))*2; 
+           // Xuất
+           document.getElementById("dt").value=dt;
+           document.getElementById("cv").value=cv;
+
+        }
+    </script>
+</body>
+</html>

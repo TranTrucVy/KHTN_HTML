@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tổng hai số</title>
+</head>
+<body>
+    <table>
+        <caption>
+            <h4>Tổng Hai số (javaScript)</h4>
+        </caption>
+        <tr>
+            <td>Nhập số hạng 1</td>
+            <td>
+                <input type="text" name="" id="so1">
+            </td>
+        </tr>
+        <tr>
+            <td>Nhập số hạng 2</td>
+            <td>
+                <input type="text" name="" id="so2">
+            </td>
+        </tr>
+        <tr>
+            <td>Tổng: </td>
+            <td>
+                <input type="text" name="" id="kq" readonly>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="Tinhtoan()">Tính tổng</button>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function Tinhtoan(){
+            var a= document.getElementById("so1").value;
+            var b= document.getElementById("so2").value;
+            var tong= Number(a)+Number(b);
+            document.getElementById("kq").value=tong;
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi màu Chữ</title>
+    <link rel="stylesheet" href="./nhapnhap.css">
+    <style>
+        @keyframes example {
+            0% {
+                color: red;
+                /* font-size:9px; */
+            }
+
+            25% {
+                color: yellow;
+                /* font-size:19px; */
+            }
+
+            50% {
+                color: blue;
+                /* font-size:29px; */
+            }
+
+            100% {
+                color: green;
+                /* font-size:39px; */
+            }
+        }
+
+        h1:hover {
+            color: red;
+            animation-name: example;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function:linear
+
+        }
+
+        /*-------------------------------------------------------------------*/
+        
+    </style>
+</head>
+
+<body>
+    <h1>Thay đổi Màu chữ</h1>
+
+    <div class="gallery">
+        <a target="_blank" href="#">
+            <img src="images/portfolio-1.jpg" alt="Mountains">
+        </a>
+        <div class="overlay">
+            <div class="text">HONDA JAZZ</div>
+            <div class="text_2">Tận hưởng sự thú vị trên mọi hành trình</div>
+        </div>
+    </div>    
+
+</body>
+
+</html>

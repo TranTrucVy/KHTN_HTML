@@ -1,0 +1,51 @@
+div.gallery {
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(233, 41, 41);
+    overflow: hidden;
+    width: 0px;
+    height: 100%;
+    transition: .5s linear;
+    opacity: 0.7;
+}
+
+div.gallery:hover .overlay {
+    width: 100%;
+}
+
+.text {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+}
+
+.text_2 {
+    white-space: nowrap;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    overflow: hidden;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

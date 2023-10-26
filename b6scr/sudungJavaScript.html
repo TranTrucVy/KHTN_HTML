@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng JavaScript trong trang HTML</title>
+    <!-- Chèn JavaScript vào head section -->
+    <script>
+        // Code
+        /*
+            Ghi chú nhiểu dòng
+        */
+        document.write("<h2>Chèn JavaScript vào head section</h2>")
+    </script>
+
+</head>
+<body>
+    <!-- Sử dụng tập tin thư viện – External script -->
+    <script src="./js/thuvien.js"></script>
+    <button onclick="thongbao('Sử dụng tập tin thư viện')">Sử dụng tập tin thư viện</button>
+    <!-- Chèn JavaScript vào body section -->
+    <script>
+        document.write("<h1>Chèn JavaScript vào body section</h1>")
+    </script>
+    <!-- Chèn JavaScript vào sự kiện -->
+    <p onclick="alert('Nhấn vào thẻ p')">Nhấn vào thẻ p</p>
+    <h1 onclick="alert('Nhấn vào thẻ h1')">Nhấn vào thẻ h1</h1>
+    <button onclick="alert('Nhấn')">Nhấn</button>
+</body>
+</html>

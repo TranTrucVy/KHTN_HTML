@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị hình ảnh Responsive</title>
+</head>
+<style>
+    *{
+        font-size:14px;
+        box-sizing: border-box;
+        
+    }
+    body{
+        /*font-size: calc(100% + 1vw + 1vh);*/
+        font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1200 - 300)));
+    }
+    h1,h3{
+        text-transform: uppercase;
+        text-align: center;
+        
+        
+
+    }
+    #mainContent {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .khung {
+        padding: 0 6px;
+        float: left;
+        width: 25%;
+    }
+    .khung img{
+        width: 100%;
+        height: auto;
+    }
+
+    @media screen and (max-width: 1024px){
+        .khung {
+            width: 50%;
+            margin: 6px 0;
+        }
+    }
+    
+    @media (max-width: 500px){
+        .khung {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div id="mainContent">
+        <h1>honda</h1>
+        <h3>The Power Of Dreams</h3>
+        <div class="khung">
+            <img src="images/portfolio-1.jpg">
+        </div>
+        <div class="khung">
+            <img src="images/portfolio-2.jpg">
+        </div>
+        <div class="khung">
+            <img src="images/portfolio-3.jpg">
+        </div>
+        <div class="khung">
+            <img src="images/portfolio-4.jpg">
+        </div>
+    </div>
+</body>
+
+</html>

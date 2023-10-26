@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các thay đổi trong tag from</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        table,tr,td{
+            border: 1px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Các thay đổi trong tag</legend>
+        <div>
+            Chọn màu: <input type="color" name="" id="">
+        </div>
+        <div>
+            Chọn ngày: <input type="date" name="" id="">
+        </div>
+        <div>
+            Chọn số: <input type="number" min="1" max="10" name="" id="">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Đăng nhập</legend>
+        <form>
+            <table style="width: 500px;" >
+                <tr>
+                    <td>Tên Đăng nhập</td>
+                    <td>
+                        <input type="text" name="" id="" autofocus placeholder="Nhập tên đăng nhập" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu</td>
+                    <td>
+                        <input type="password" name="" id="" required>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Đăng nhập">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>DataList</legend>
+        <input list="datalist">
+        <datalist id="datalist">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </fieldset>
+    <center>
+        <h3>Các thẻ cũ bị loại bỏ trong HTML5</h3>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+/*
+External Style
+*/
+
+body{
+    background-color: brown;
+    color: white;
+}
+h1{
+    color: white;
+}
+
+div{
+    color: white;
+}
+
+/*
+    Lớp (class)
+    .className{
+
+    }
+    <tag class="className1 className2 ... "
+*/
+.title{
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+.fontSize{
+    font-size: 30px;
+}
+
+/*
+    Định danh (id)
+    #idName{
+
+    }
+    <tag id="idName" class="className1 className2 ... "
+*/
+
+#header{
+    color: red;
+}

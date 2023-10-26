@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Diện tích - Chu vi Hình Chữ Nhật</title>
+    <style>
+        .error{
+            color: red;
+            font-weight: 800;
+        }
+        .cv{
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            <h4>Tính Diện tích - Chu vi Hình Chữ Nhật (javaScript)</h4>
+        </caption>
+        <tr>
+            <td>Nhập Chiều Dài</td>
+            <td>
+                <input type="text" name="" id="d"> <span class="error" id="lbl_d"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Nhập Chiều Rộng</td>
+            <td>
+                <input type="text" name="" id="r"> <span class="error" id="lbl_r"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Diện tích: </td>
+            <td>
+                <!-- <input type="text" name="" id="dt" readonly> -->
+                <div id="kq_dt"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>Chu vi: </td>
+            <td>
+                <!-- <input type="text" name="" id="cv" readonly> -->
+                <div id="kq_cv"></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="Tinhtoan()">Tổng tiền thanh toán:</button>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function Tinhtoan(){
+           var d=document.getElementById("d").value;
+           var r=document.getElementById("r").value;
+
+           document.getElementById("lbl_d").innerHTML=""
+           document.getElementById("lbl_r").innerHTML=""
+           if(d==""){
+               document.getElementById("lbl_d").innerHTML="(*)"
+               document.getElementById("d").focus();
+               return false;
+           }
+           if(isNaN(d)){
+               document.getElementById("lbl_d").innerHTML="(*)"
+               document.getElementById("d").select();
+               return false;
+           }
+           if(r==""){
+               document.getElementById("lbl_r").innerHTML="(*)"
+               document.getElementById("r").focus();
+               return false;
+           }
+           if(isNaN(r)){
+               document.getElementById("lbl_r").innerHTML="(*)"
+               document.getElementById("r").select();
+               return false;
+           }
+           
+           var dt= Number(d) * Number(r);
+           var cv= (Number(d) + Number(r))*2; 
+    
+           document.getElementById("kq_dt").innerHTML=dt;
+           document.getElementById("kq_dt").style.color="chocolate"
+           document.getElementById("kq_cv").innerHTML=cv;
+           document.getElementById("kq_cv").className="cv"
+
+        }
+    </script>
+</body>
+</html>
